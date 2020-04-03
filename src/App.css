@@ -1,0 +1,107 @@
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+
+.Keymaster {
+  width: 400px;
+  margin: 4rem auto;
+}
+
+.Keymaster__Guess_Item {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.Keymaster__PreviousGuess:last-of-type {
+  border-bottom: 1px solid lightgray;
+}
+
+.Keymaster__PreviousGuess {
+  position: relative;
+  display: flex;
+  padding: 0.5rem 0;
+}
+
+.Keymaster__PreviousGuess__Score {
+  display: flex;
+  align-items: center;
+}
+
+.Keymaster__PreviousGuess__ScoreDot {
+  border: 1px solid gray;
+  border-radius: 50%;
+  height: 15px;
+  width: 15px;
+  display: inline-block;
+  background: lightgray;
+}
+
+.Keymaster__PreviousGuess__Score {
+  margin-left: auto;
+}
+
+.Keymaster__PreviousGuess:before {
+  content: attr(data-turn);
+  position: absolute;
+  border: 1px solid lightgray;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  left: -50px;
+}
+
+.Keymaster__Form {
+  padding: 0.5rem 0;
+  display: flex;
+  align-items: center;
+}
+
+.Keymaster__ScoreBoard {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.Keymaster__ScoreBoard h2 {
+  margin: 0 auto;
+}
+
+.Keymaster__ScoreBoard > h3:last-of-type {
+  margin-left: auto;
+}
+
+[type='button'] {
+  border: 1px solid gray;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+[type='submit'],
+.Keymaster__StartButton {
+  background: blue;
+  color: white;
+  padding: 0.5rem;
+  margin-left: 1rem;
+}
+
+.Keymaster__StartButton {
+  margin-left: 0rem;
+}
+
+.Keymaster__Splash {
+  height: 300px;
+  width: 100%;
+  border: 1px solid gray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
